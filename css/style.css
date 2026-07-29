@@ -1,0 +1,234 @@
+:root {
+      --bg-dark: #0a0d14;
+      --bg-card-dark: #121723;
+      --accent-orange: #ff5500;
+      --accent-orange-hover: #e04b00;
+      --accent-cyan: #00d294;
+      --wa-green: #25d366;
+      --wa-green-hover: #1ebd56;
+      --text-muted: #8a99ad;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-light: #e2e8f0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background-color: #f8fafc;
+      letter-spacing: -0.01em;
+    }
+
+    /* Navbar Flotante Glassmorphism */
+    .navbar-premium {
+      background-color: rgba(10, 13, 20, 0.85) !important;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: all 0.3s ease;
+    }
+
+    .brand-title {
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+    }
+    .brand-title span {
+      color: var(--accent-orange);
+    }
+
+    /* Hero Section con Grid Industrial */
+    .hero-premium {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 80% 20%, rgba(255, 85, 0, 0.12) 0%, transparent 40%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 40px 40px, 40px 40px;
+      padding: 160px 0 100px 0;
+      color: #ffffff;
+      position: relative;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 85, 0, 0.1);
+      border: 1px solid rgba(255, 85, 0, 0.25);
+      color: var(--accent-orange);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+    }
+
+    /* Botones Pro */
+    .btn-orange {
+      background-color: var(--accent-orange);
+      color: #ffffff !important;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 28px;
+      box-shadow: 0 4px 20px rgba(255, 85, 0, 0.3);
+      transition: all 0.25s ease;
+    }
+    .btn-orange:hover {
+      background-color: var(--accent-orange-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(255, 85, 0, 0.45);
+    }
+
+    .btn-glass {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: #ffffff !important;
+      font-weight: 500;
+      border-radius: 8px;
+      padding: 12px 28px;
+      backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+    }
+    .btn-glass:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .whatsapp-btn {
+      background-color: var(--wa-green);
+      color: #fff !important;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      transition: all 0.25s ease;
+    }
+    .whatsapp-btn:hover {
+      background-color: var(--wa-green-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Tarjetas de Producto Elegantes */
+    .product-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px -15px rgba(10, 13, 20, 0.08);
+      border-color: #cbd5e1;
+    }
+    .product-img-wrapper {
+      position: relative;
+      background: #f1f5f9;
+      padding: 24px;
+      text-align: center;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-img-wrapper img {
+      max-height: 170px;
+      max-width: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 15px rgba(0,0,0,0.08));
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover .product-img-wrapper img {
+      transform: scale(1.05);
+    }
+
+    /* Panel de Servicios (Tabs) estilo Dashboard */
+    .services-container {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    }
+    .nav-pills-custom .nav-link {
+      color: #475569;
+      font-weight: 600;
+      padding: 14px 20px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      text-align: left;
+      transition: all 0.25s ease;
+    }
+    .nav-pills-custom .nav-link.active {
+      background: var(--bg-dark);
+      color: #ffffff;
+      border-color: var(--bg-dark);
+    }
+    .nav-pills-custom .nav-link:hover:not(.active) {
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    /* Banner CTA Industrial */
+    .cta-premium {
+      background: linear-gradient(135deg, #0a0d14 0%, #171f2e 100%);
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-premium::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(255,85,0,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Botón Flotante WhatsApp */
+    .float-wa {
+      position: fixed;
+      width: 54px;
+      height: 54px;
+      bottom: 28px;
+      right: 28px;
+      background-color: var(--wa-green);
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 26px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+    .float-wa:hover {
+      color: #fff;
+      transform: scale(1.08);
+    }
+    /* Marco del Catálogo (mismo comportamiento que Proyectos) */
+.product-img-wrapper {
+  position: relative;
+  height: 220px; /* Altura fija idéntica para todas */
+  width: 100%;
+  overflow: hidden;
+  background-color: #0a0d14; /* Fondo oscuro o gris para rellenar si es transparente */
+}
+
+.product-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Llena el 100% del recuadro de borde a borde */
+  object-position: center; /* Centra la parte importante de la imagen */
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-img-wrapper img {
+  transform: scale(1.05);
+}

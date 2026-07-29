@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RD Ingeniería</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Tu CSS Local -->
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+  <!-- Configuración de WhatsApp -->
+  <script>
+    const TELEFONO_WA = "56975815602";
+  </script>
+
+  <!-- Navbar Premium -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-premium py-3">
+    <div class="container">
+      <a class="navbar-brand brand-title fs-4 d-flex align-items-center gap-2" href="index.html">
+        <img src="./img/logo.png" alt="Logo RD Ingeniería" style="height: 45px; width: auto; object-fit: contain;">
+        <span class="text-white fw-bold">RD <span style="color: #ff5500;">INGENIERÍA</span></span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-4 gap-3">
+          <li class="nav-item"><a class="nav-link text-white-50 fw-medium" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50 fw-medium" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50 fw-medium" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50 fw-medium" href="#trabajos">Proyectos</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <button class="btn btn-glass btn-sm px-3" data-bs-toggle="modal" data-bs-target="#modalVisitaTecnica">
+            <i class="bi bi-geo-alt me-1 text-warning"></i> Agendar Visita
+          </button>
+          <button onclick="enviarWhatsApp('Hola RD Ingeniería, me gustaría realizar una consulta general.')" 
+                  class="btn whatsapp-btn btn-sm px-3">
+            <i class="bi bi-whatsapp me-1"></i> Contactar
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section estilo High-Tech -->
+  <header id="inicio" class="hero-premium">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7">
+          <div class="hero-badge mb-3">
+            <i class="bi bi-gear-wide-connected"></i> Neumática & Control Industrial
+          </div>
+          <h1 class="display-4 fw-extrabold text-white mb-3 tracking-tight">
+            Ingeniería de Precisión para la Industria Moderna
+          </h1>
+          <p class="lead text-white-50 mb-4 col-lg-10 fs-6">
+            Componentes neumáticos multimarca de alta fiabilidad, diseño de tableros eléctricos bajo norma y mantenimiento de planta en terreno.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <button class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#modalVisitaTecnica">
+              <i class="bi bi-calendar-check me-2"></i>Solicitar Inspección Técnica
+            </button>
+            <a href="#productos" class="btn btn-glass">Explorar Catálogo</a>
+          </div>
+
+          <!-- Métricas de Impacto -->
+          <div class="row mt-5 pt-3 border-top border-white border-opacity-10 g-4">
+            <div class="col-auto me-4">
+              <h3 class="fw-bold text-white mb-0">Multimarca</h3>
+              <p class="small text-white-50 mb-0">Festo, Micro, SMC</p>
+            </div>
+            <div class="col-auto me-4">
+              <h3 class="fw-bold text-white mb-0">100%</h3>
+              <p class="small text-white-50 mb-0">Soporte en Terreno</p>
+            </div>
+            <div class="col-auto">
+              <h3 class="fw-bold text-white mb-0">Norma SEC</h3>
+              <p class="small text-white-50 mb-0">Tableros Certificados</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen Destacada Hero -->
+        <div class="col-lg-5 text-center">
+          <div class="p-2 rounded-4" style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle);">
+            <img src="./img/tablero1.jpeg" alt="Tablero Industrial RD Ingeniería" class="img-fluid rounded-3 shadow-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Catálogo de Productos -->
+  <section id="productos" class="py-5 my-4">
+    <div class="container py-3">
+      <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+        <div>
+          <span class="text-uppercase fw-bold text-primary small tracking-widest">Componentes & Repuestos</span>
+          <h2 class="fw-bold text-slate-900 mb-0 mt-1">Catálogo de Equipamiento</h2>
+        </div>
+        <p class="text-muted mb-0 col-md-5 text-md-end">Suministro rápido de componentes neumático-eléctricos con especificaciones garantizadas.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Producto 1 -->
+        <div class="col-md-4">
+          <div class="product-card h-100 d-flex flex-column">
+            <div class="product-img-wrapper">
+              <img src="./img/valvulas.png" alt="Electroválvulas">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 w-auto me-auto mb-2 fw-semibold">Válvulas Neumáticas</span>
+              <h5 class="fw-bold mb-2">Electroválvulas y Manifolds</h5>
+              <p class="text-muted small mb-4">Soluciones de conmutación rápida de aire comprimido en 24VDC y 220VAC.</p>
+              <button onclick="enviarWhatsApp('Hola RD Ingeniería, solicito cotización de Electroválvulas y Manifolds.')" 
+                      class="btn whatsapp-btn w-100 mt-auto py-2">
+                <i class="bi bi-whatsapp me-1"></i> Cotizar Disponibilidad
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-md-4">
+          <div class="product-card h-100 d-flex flex-column">
+            <div class="product-img-wrapper">
+              <img src="./img/cilindros.png" alt="Cilindros Neumáticos">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 w-auto me-auto mb-2 fw-semibold">Cilindros Neumáticos</span>
+              <h5 class="fw-bold mb-2">Cilindros Neumáticos ISO</h5>
+              <p class="text-muted small mb-4">Cilindros compactos, guiados y de gran carrera para automatización pesada.</p>
+              <button onclick="enviarWhatsApp('Hola RD Ingeniería, solicito cotización de Cilindros Neumáticos ISO.')" 
+                      class="btn whatsapp-btn w-100 mt-auto py-2">
+                <i class="bi bi-whatsapp me-1"></i> Cotizar Disponibilidad
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-md-4">
+          <div class="product-card h-100 d-flex flex-column">
+            <div class="product-img-wrapper">
+              <img src="./img/conector.png" alt="Racorería">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 w-auto me-auto mb-2 fw-semibold">Conectores</span>
+              <h5 class="fw-bold mb-2">Conectores y Mangueras PU</h5>
+              <p class="text-muted small mb-4">Racorería metálica instantánea y mangueras de alta resistencia química e industrial.</p>
+              <button onclick="enviarWhatsApp('Hola RD Ingeniería, solicito cotización de Racorería y Mangueras.')" 
+                      class="btn whatsapp-btn w-100 mt-auto py-2">
+                <i class="bi bi-whatsapp me-1"></i> Cotizar Disponibilidad
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Servicios en Formato Tab Panel (Estilo Dashboard) -->
+  <section id="servicios" class="py-5 bg-light border-top border-bottom">
+    <div class="container py-3">
+      <div class="text-center mb-5">
+        <span class="text-uppercase fw-bold text-primary small tracking-widest">Capacidades Técnicas</span>
+        <h2 class="fw-bold mb-2">Servicios de Ingeniería Especializada</h2>
+        <p class="text-muted col-md-6 mx-auto">Diseñamos, ejecutamos y mantenemos soluciones eléctricas y neumáticas de nivel profesional.</p>
+      </div>
+
+      <div class="services-container p-4 p-md-5">
+        <div class="row gy-4 align-items-center">
+          <!-- Columna Pestañas -->
+          <div class="col-lg-4">
+            <div class="nav flex-column nav-pills nav-pills-custom gap-2" id="v-pills-tab" role="tablist">
+              <button class="nav-link active" id="pill-tableros-tab" data-bs-toggle="pill" data-bs-target="#pill-tableros" type="button" role="tab">
+                <i class="bi bi-cpu me-2"></i> Armado de Tableros Eléctricos
+              </button>
+              <button class="nav-link" id="pill-mantenimiento-tab" data-bs-toggle="pill" data-bs-target="#pill-mantenimiento" type="button" role="tab">
+                <i class="bi bi-tools me-2"></i> Mantención Eléctrica de Planta
+              </button>
+              <button class="nav-link" id="pill-maquinaria-tab" data-bs-toggle="pill" data-bs-target="#pill-maquinaria" type="button" role="tab">
+                <i class="bi bi-gear-wide me-2"></i> Reparación de Maquinaria
+              </button>
+              <button class="nav-link" id="pill-transformadores-tab" data-bs-toggle="pill" data-bs-target="#pill-transformadores" type="button" role="tab">
+                <i class="bi bi-lightning-charge me-2"></i> Servicios a Transformadores
+              </button>
+            </div>
+          </div>
+
+          <!-- Columna Contenido Dinámico -->
+          <div class="col-lg-8 ps-lg-5 border-start-lg">
+            <div class="tab-content" id="v-pills-tabContent">
+              <!-- Tab 1 -->
+              <div class="tab-pane fade show active" id="pill-tableros" role="tabpanel">
+                <h4 class="fw-bold mb-3">Integración y Armado de Tableros</h4>
+                <p class="text-muted mb-4">Diseñamos tableros de automatización con integración de PLC, variadores de frecuencia y protección eléctrica según regulaciones vigentes.</p>
+                <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+                  <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Planos y rotulado bajo norma</li>
+                  <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Pruebas de funcionamiento en taller</li>
+                  <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Componentes de marcas líderes</li>
+                </ul>
+                <button class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#modalVisitaTecnica" onclick="preseleccionarServicio('Armado / Evaluación de Tableros Eléctricos')">
+                  Evaluar Proyecto de Tablero
+                </button>
+              </div>
+
+              <!-- Tab 2 -->
+              <div class="tab-pane fade" id="pill-mantenimiento" role="tabpanel">
+                <h4 class="fw-bold mb-3">Mantenimiento Eléctrico Industrial</h4>
+                <p class="text-muted mb-4">Planes preventivos y atención correctiva para garantizar continuidad operativa y prevenir paradas no programadas.</p>
+                <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+                  <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Inspección termográfica de tableros</li>
+                  <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Apriete y balanceo de cargas</li>
+                  <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Diagnóstico de picos de consumo</li>
+                </ul>
+                <button class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#modalVisitaTecnica" onclick="preseleccionarServicio('Mantención Eléctrica Industrial')">
+                  Solicitar Evaluación de Mantenimiento
+                </button>
+              </div>
+
+              <!-- Tab 3 -->
+              <div class="tab-pane fade" id="pill-maquinaria" role="tabpanel">
+                <h4 class="fw-bold mb-3">Diagnóstico y Reparación de Maquinaria</h4>
+                <p class="text-muted mb-4">Soporte técnico especializado en líneas de producción electroneumáticas y automatizadas.</p>
+                <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+                  <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Detección de fugas y fallas neumáticas</li>
+                  <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Reemplazo de sensores y actuadores</li>
+                  <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Optimización de tiempos de ciclo</li>
+                </ul>
+                <button class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#modalVisitaTecnica" onclick="preseleccionarServicio('Mantención de Maquinaria y Neumática')">
+                  Agendar Inspección de Maquinaria
+                </button>
+              </div>
+
+              <!-- Tab 4 -->
+              <div class="tab-pane fade" id="pill-transformadores" role="tabpanel">
+                <h4 class="fw-bold mb-3">Inspección de Transformadores</h4>
+                <p class="text-muted mb-4">Pruebas de aislamiento, mantenimiento preventivo y verificación de parámetros operativos.</p>
+                <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+                  <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Pruebas dieléctricas de aceite</li>
+                  <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Mantenimiento de conexiones de MT/BT</li>
+                </ul>
+                <button class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#modalVisitaTecnica" onclick="preseleccionarServicio('Servicios e Inspección de Transformador')">
+                  Solicitar Servicio a Transformadores
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sección de Proyectos Ejecutados -->
+  <section id="trabajos" class="py-5 bg-white border-top">
+    <div class="container py-3">
+      <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+        <div>
+          <span class="text-uppercase fw-bold text-primary small tracking-widest">Experiencia Comprobada</span>
+          <h2 class="fw-bold text-slate-900 mb-0 mt-1">Proyectos Ejecutados</h2>
+        </div>
+        <p class="text-muted mb-0 col-md-5 text-md-end">Casos de éxito e integraciones desarrolladas por nuestro equipo técnico en terreno.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Proyecto 1 -->
+        <div class="col-md-4">
+          <div class="product-card h-100 d-flex flex-column">
+            <div class="position-relative">
+              <img src="./img/tablero1.jpeg" class="w-100" style="height: 240px; object-fit: cover;" alt="Tablero Electroneumático">
+              <span class="badge bg-dark text-white position-absolute top-0 end-0 m-3 px-3 py-2 border border-secondary">
+                <i class="bi bi-check2-circle text-success me-1"></i> Entregado
+              </span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="small text-muted mb-1 fw-semibold">Control & Distribución</div>
+              <h5 class="fw-bold mb-2">Tablero Electroneumático Local / Remoto</h5>
+              <p class="text-muted small mb-4">Diseño y ensamblaje de tablero de control electroneumático bajo norma de seguridad para proceso continuo.</p>
+              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="badge bg-light text-dark border">Electroneumático</span>
+                <a href="#modalVisitaTecnica" data-bs-toggle="modal" onclick="preseleccionarServicio('Armado / Evaluación de Tableros Eléctricos')" class="text-primary fw-bold text-decoration-none small">
+                  Consultar similar <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="col-md-4">
+          <div class="product-card h-100 d-flex flex-column">
+            <div class="position-relative">
+              <img src="./img/automatizacion.png" class="w-100" style="height: 240px; object-fit: cover;" alt="Automatización de Línea">
+              <span class="badge bg-dark text-white position-absolute top-0 end-0 m-3 px-3 py-2 border border-secondary">
+                <i class="bi bi-check2-circle text-success me-1"></i> Entregado
+              </span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="small text-muted mb-1 fw-semibold">Automatización Industrial</div>
+              <h5 class="fw-bold mb-2">Automatización de Válvulas Neumáticas</h5>
+              <p class="text-muted small mb-4">Implementación de caja de distribución con dos sensores de posición para monitorear el estado de la válvula, indicando apertura y cierre en tiempo real.</p>
+              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="badge bg-light text-dark border">Válvulas industrial</span>
+                <a href="#modalVisitaTecnica" data-bs-toggle="modal" onclick="preseleccionarServicio('Mantención de Maquinaria y Neumática')" class="text-primary fw-bold text-decoration-none small">
+                  Consultar similar <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="col-md-4">
+          <div class="product-card h-100 d-flex flex-column">
+            <div class="position-relative">
+              <img src="./img/transformador2.png" class="w-100" style="height: 240px; object-fit: cover;" alt="Mantenimiento a Transformador">
+              <span class="badge bg-dark text-white position-absolute top-0 end-0 m-3 px-3 py-2 border border-secondary">
+                <i class="bi bi-check2-circle text-success me-1"></i> Entregado
+              </span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="small text-muted mb-1 fw-semibold">Alta & Media Tensión</div>
+              <h5 class="fw-bold mb-2">Mantención Integral a Transformador</h5>
+              <p class="text-muted small mb-4">Pruebas dieléctricas de aislación, reajuste de conexiones y reacondicionamiento en subestación.</p>
+              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="badge bg-light text-dark border">Mantenimiento Subestación</span>
+                <a href="#modalVisitaTecnica" data-bs-toggle="modal" onclick="preseleccionarServicio('Servicios e Inspección de Transformador')" class="text-primary fw-bold text-decoration-none small">
+                  Consultar similar <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner de Agendamiento en Terreno -->
+  <section class="container my-5 py-3">
+    <div class="cta-premium p-4 p-md-5 text-white shadow-lg">
+      <div class="row align-items-center gy-4 position-relative" style="z-index: 2;">
+        <div class="col-lg-8">
+          <span class="badge bg-white bg-opacity-10 text-warning border border-warning border-opacity-25 mb-3 px-3 py-2">
+            <i class="bi bi-shield-check me-1"></i> Cobertura Técnica Regional
+          </span>
+          <h3 class="fw-bold mb-2 display-6 fs-3">¿Requieres asistencia directa en tu planta industrial?</h3>
+          <p class="text-white-50 mb-0">Coordinamos la visita de un especialista técnico para levantamiento o atención de requerimientos.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <button class="btn btn-orange btn-lg w-100 w-lg-auto" data-bs-toggle="modal" data-bs-target="#modalVisitaTecnica">
+            <i class="bi bi-calendar-event me-2"></i> Agendar Visita en Terreno
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Pro -->
+  <footer class="py-5 text-white" style="background-color: var(--bg-dark);">
+    <div class="container text-center text-md-start">
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <h5 class="brand-title fs-5 mb-3">RD <span>INGENIERÍA</span></h5>
+          <p class="small text-white-50 mb-0 col-md-10">Servicios de ingeniería, automatización electroneumática y suministro de repuestos de alta durabilidad para la industria.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small text-white-50 mb-2"><i class="bi bi-geo-alt text-warning me-2"></i>Atención en Terreno e Inspección Técnica</p>
+          <p class="small text-white-50 mb-0"><i class="bi bi-envelope text-warning me-2"></i>comercial@rdingenieria.com</p>
+        </div>
+      </div>
+      <hr class="my-4 border-white border-opacity-10">
+      <div class="text-center small text-white-50">
+        &copy; 2026 RD Ingeniería. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="#" onclick="enviarWhatsApp('Hola RD Ingeniería, me comunico desde la página web para una consulta.')" class="float-wa" title="Escríbenos por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- MODAL DE BOOTSTRAP: SOLICITUD DE VISITA TÉCNICA -->
+  <div class="modal fade" id="modalVisitaTecnica" tabindex="-1" aria-labelledby="modalVisitaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="modal-header p-4 text-white" style="background-color: var(--bg-dark);">
+          <div>
+            <h5 class="modal-title fw-bold" id="modalVisitaLabel">
+              <i class="bi bi-tools text-warning me-2"></i>Solicitar Visita Técnica en Terreno
+            </h5>
+            <p class="small text-white-50 mb-0">Ingresa los datos del requerimiento para transferir tu solicitud directo a nuestro equipo.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="formVisitaTecnica" onsubmit="procesarSolicitudVisita(event)">
+          <div class="modal-body p-4 bg-light">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="vtNombre" class="form-label fw-bold small">Nombre Completo <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="vtNombre" placeholder="Ej: Carlos Mendoza" required>
+              </div>
+              <div class="col-md-6">
+                <label for="vtEmpresa" class="form-label fw-bold small">Empresa / Planta <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="vtEmpresa" placeholder="Ej: Alimentos del Sur S.A." required>
+              </div>
+              <div class="col-md-6">
+                <label for="vtTelefono" class="form-label fw-bold small">Teléfono de Contacto <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" id="vtTelefono" placeholder="Ej: +56 9 1234 5678" required>
+              </div>
+              <div class="col-md-6">
+                <label for="vtUbicacion" class="form-label fw-bold small">Ubicación / Comuna <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="vtUbicacion" placeholder="Ej: Planta Maipú, Santiago" required>
+              </div>
+              <div class="col-md-6">
+                <label for="vtServicio" class="form-label fw-bold small">Servicio Requerido <span class="text-danger">*</span></label>
+                <select class="form-select" id="vtServicio" required>
+                  <option value="" selected disabled>Selecciona un servicio...</option>
+                  <option value="Armado / Evaluación de Tableros Eléctricos">Armado / Evaluación de Tableros Eléctricos</option>
+                  <option value="Mantención Eléctrica Industrial">Mantención Eléctrica Industrial</option>
+                  <option value="Mantención de Maquinaria y Neumática">Mantención de Maquinaria y Neumática</option>
+                  <option value="Servicios e Inspección de Transformador">Servicios e Inspección de Transformador</option>
+                  <option value="Diagnóstico de Falla / Emergencia">Diagnóstico de Falla / Emergencia</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="vtFecha" class="form-label fw-bold small">Fecha Preferente</label>
+                <input type="date" class="form-control" id="vtFecha">
+              </div>
+              <div class="col-12">
+                <label for="vtDetalle" class="form-label fw-bold small">Detalle del Requerimiento</label>
+                <textarea class="form-control" id="vtDetalle" rows="3" placeholder="Describe brevemente el trabajo o la falla detectada..."></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check bg-white p-3 rounded border">
+                  <input class="form-check-input ms-0 me-2" type="checkbox" id="vtUrgente">
+                  <label class="form-check-label fw-bold text-danger" for="vtUrgente">
+                    <i class="bi bi-exclamation-triangle-fill me-1"></i> Es una emergencia / Planta detenida
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-white p-3">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn whatsapp-btn px-4 fw-bold">
+              <i class="bi bi-whatsapp me-2"></i>Enviar Solicitud por WhatsApp
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function enviarWhatsApp(mensaje) {
+      const mensajeCodificado = encodeURIComponent(mensaje);
+      window.open(`https://wa.me/${TELEFONO_WA}?text=${mensajeCodificado}`, '_blank');
+    }
+
+    function preseleccionarServicio(nombreServicio) {
+      const select = document.getElementById('vtServicio');
+      for (let option of select.options) {
+        if (option.value.includes(nombreServicio)) {
+          option.selected = true;
+          break;
+        }
+      }
+    }
+
+    function procesarSolicitudVisita(event) {
+      event.preventDefault();
+      const nombre = document.getElementById('vtNombre').value.trim();
+      const empresa = document.getElementById('vtEmpresa').value.trim();
+      const telefono = document.getElementById('vtTelefono').value.trim();
+      const ubicacion = document.getElementById('vtUbicacion').value.trim();
+      const servicio = document.getElementById('vtServicio').value;
+      const fecha = document.getElementById('vtFecha').value;
+      const detalle = document.getElementById('vtDetalle').value.trim();
+      const urgente = document.getElementById('vtUrgente').checked;
+
+      let mensaje = `*SOLICITUD DE VISITA TÉCNICA - RD INGENIERÍA*\n\n`;
+      if (urgente) mensaje += `🚨 *URGENCIA: PLANTA DETENIDA*\n\n`;
+      mensaje += `👤 *Cliente:* ${nombre}\n🏢 *Empresa:* ${empresa}\n📞 *Teléfono:* ${telefono}\n📍 *Ubicación:* ${ubicacion}\n🛠️ *Servicio:* ${servicio}\n`;
+      if (fecha) mensaje += `📅 *Fecha:* ${fecha}\n`;
+      if (detalle) mensaje += `📝 *Detalle:* ${detalle}\n`;
+
+      enviarWhatsApp(mensaje);
+
+      const modalElement = document.getElementById('modalVisitaTecnica');
+      const modalInstance = bootstrap.Modal.getInstance(modalElement);
+      if (modalInstance) modalInstance.hide();
+      document.getElementById('formVisitaTecnica').reset();
+    }
+  </script>
+</body>
+</html>
